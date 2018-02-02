@@ -8,6 +8,7 @@
 </head>
 <body>
   <header>
+    <!-- TODO: Хедер тоже, что и на главной -->
     <div class="container">
       <div class="logo">
         <a href="index.html">
@@ -39,7 +40,8 @@
             <input type="submit" value="">
           </div>
         </form>
-
+        <!-- TODO: Див вокруг картинки не нужен. Див в ссылку не вкладывают -->
+        <!-- поправила div на figure -->
         <div class="instructors_list">
           <a href="#" class="instructor_item">
             <figure class="instructor_photo-link">
@@ -78,6 +80,7 @@
         <div class="instructor_info">
           <div class="instructor_about">
             <div class="instructor_photo">
+              <!-- TODO: Див вокруг картинки не нужен -->
               <img src="http://via.placeholder.com/300x400" alt="">
             </div>
             <div class="inscructor_experience">
@@ -105,6 +108,10 @@
               <a href="#" class="btn">Записаться</a>
               <a href="#" class="btn btn_like">
                 <img src="http://via.placeholder.com/16x24" alt="">
+                <!-- TODO: Зачем тут id? -->
+                <!-- эта кнопка показалась мне похожей на кнопку 'like' и при нажатии на нее число 5 должно
+                увеличиться. Поэтому я использовала id,  чтобы с помощью js обратиться к нему и при нажатии прибавлять
+                1 к нему -->
                 <span id="like-count">5</span>
               </a>
             </div>
@@ -123,6 +130,7 @@
           <div class="instructor_review">
             <article>
               <h3 class="subtitle">Марина</h3>
+              <!-- TODO: Иконка контактика это ссылка -->
               <img src="http://via.placeholder.com/24x24" alt="" class="social_links-vk">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ea itaque laudantium ad quas provident animi saepe numquam aut eius temporibus tempore, quod amet ratione, ab natus earum minus debitis?</p>
             </article>
@@ -169,6 +177,8 @@
       </div>
     </section>
   </main>
+
+  <!-- TODO: Футер тоже, что и на главной -->
   <footer>
     <div class="container">
       <div class="footer_links">
