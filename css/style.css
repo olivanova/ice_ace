@@ -1,7 +1,42 @@
-body{
-  color: darkslategray;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+@font-face {
+  font-family: 'PT Sans', sans-serif;;
+  src:url(../fonts/PT_Sans-Web-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
 }
+@font-face {
+  font-family: 'futura-pt', sans-serif;;
+  src:url(../fonts/Futura.ttc);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'futura-pt', sans-serif;;
+  src:url(../fonts/Futura.ttc);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'futura-pt', sans-serif;;
+  src:url(../fonts/Futura.ttc);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'futura-pt', sans-serif;;
+  src:url(../fonts/Futura.ttc);
+  font-style: normal;
+  font-weight: 700;
+}
+
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'PT Sans', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  color: #111;
+}
+
 .container{
   width: 1160px;
   margin-left: auto;
@@ -13,13 +48,12 @@ body{
   background-repeat: no-repeat;
   width: 1280px;
   height: 536px;
-  padding-top: 109px;
-  padding-left: 60px;
+  padding-top: 76px;
   margin-bottom: 37px;
 }
 
 .promo h1{
-  width: 530px;
+  width: 550px;
   font-size: 50px;
 }
 
@@ -29,7 +63,10 @@ body{
 }
 
 h1 {
-   color: #fff;
+  color: #fff;
+  font-family: 'futura-pt', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .logo {
@@ -46,6 +83,18 @@ h1 {
 
 .main-nav li{
   display: inline-block;
+}
+
+.title{
+  font-family: 'futura-pt', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.subtitle{
+  font-family: 'futura-pt', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .item_advantage{
