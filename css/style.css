@@ -2,3 +2,62 @@ body{
   color: darkslategray;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+.container{
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo{
+  background-image: url(../images/promo_bg.jpg);
+  background-repeat: no-repeat
+  width: 1280px;
+  height: 536px;
+  padding-top: 109px;
+  padding-left: 60px;
+  margin-bottom: 37px;
+}
+
+.promo h1{
+  width: 530px;
+  font-size: 50px;
+}
+
+.promo h1 span{
+  font-size: 38px;
+  margin-top: 33px;
+}
+
+h1 {
+   color: #fff;
+}
+
+.logo {
+  display: inline-block;
+  width: 160px;
+  height: 55px;
+  vertical-align: middle;
+}
+
+.main-nav{
+  display: inline-block;
+/*  float: right;*/
+}
+
+.main-nav li{
+  display: inline-block;
+}
+
+.item_advantage{
+  display: inline-block;
+  width: 360px;
+}
+
+.discount{
+  background-image: url(../images/discount_bg.jpg);
+  color: #fff;
+}
+
+footer{
+  background-image: url(../images/footer_bg.jpg);
+}
