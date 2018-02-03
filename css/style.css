@@ -5,33 +5,39 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: 'futura-pt', sans-serif;;
-  src:url(../fonts/Futura.ttc);
+  font-family: 'FuturaPT-Book', sans-serif;
+  src:url(../fonts/FuturaPT-Book.ttf);
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: 'futura-pt', sans-serif;;
-  src:url(../fonts/Futura.ttc);
+  font-family: 'FuturaPT-Medium', sans-serif;
+  src:url(../fonts/FuturaPT-Medium.woff);
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
-  font-family: 'futura-pt', sans-serif;;
-  src:url(../fonts/Futura.ttc);
+  font-family: 'FuturaPT-Demi', sans-serif;
+  src:url(../fonts/FuturaPT-Demi.ttf);
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
-  font-family: 'futura-pt', sans-serif;;
-  src:url(../fonts/Futura.ttc);
+  font-family: 'FuturaPT-Heavy', sans-serif;
+  src:url(../fonts/FuturaPT-Heavy.ttf);
   font-style: normal;
   font-weight: 700;
 }
 
+@font-face {
+  font-family: 'FuturaPT-Bold', sans-serif;
+  src:url(../fonts/FuturaPT-Bold.woff);
+  font-style: normal;
+  font-weight: 900;
+}
+
 body{
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-family: 'PT Sans', sans-serif;;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #111;
@@ -64,9 +70,9 @@ body{
 
 h1 {
   color: #fff;
-  font-family: 'futura-pt', sans-serif;;
+  font-family: FuturaPT-Bold, sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .logo {
@@ -86,13 +92,14 @@ h1 {
 }
 
 .title{
-  font-family: 'futura-pt', sans-serif;;
+  font-family: 'FuturaPT-Heavy', sans-serif;;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .subtitle{
-  font-family: 'futura-pt', sans-serif;;
+  font-family: 'FuturaPT-Demi', sans-serif;;
   font-style: normal;
   font-weight: 600;
 }
