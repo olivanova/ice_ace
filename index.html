@@ -8,12 +8,12 @@
 </head>
 <body>
 <div class="promo">
-  <div class="container">
-    <h1>Школа сноубординга и горных лыж <br><span>в Санкт-Петербурге</span></h1>
+  <div class="promo__container">
+    <h1>Школа сноубординга и горных лыж<br><span>в Санкт-Петербурге</span></h1>
   </div>
 </div>
   <header>
-    <div class="container">
+    <div class="header">  <!-- header__container?? -->
       <div class="logo">
         <a href="#">
           <img src="images/logo.png" alt="logo" class='logo_img'>
@@ -37,179 +37,168 @@
   <main>
     <section class="services">
       <!-- TODO:  services и container выполняют одну и ту же функцию. Выбери что то одно-->
-      <!-- эту часть мы писали на занятии вместе с преподавателем))
-        В этому случае что лучше оставить, services и container?
-        если бы я делала это сама, я бы добавила только container. я не очень понимаю для чего здесь section =(  -->
-      <div class="container">
-        <h2 class="title">Наши услуги</h2>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur.</p>
-        <div class="services_content">
+        <h2 class="services__title">Наши услуги</h2>
+        <p class="services__descr">Для взрослых и детей 6+ / любого уровня подготовки</p>
+        <div class="services-content">
 
-          <article class="service">
+          <article class="service__article">
             <!-- TODO: Див вокруг картинки не нужен -->
-            <div class="service_photo">
+            <div class="service__photo">
               <img src="images/service_img-1.jpg" alt="">
             </div>
-          <div class="service_info">
-            <h3 class="subtitle">разовое посещение</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius explicabo voluptatem minus sit a voluptate!</p>
-            <div class="service_links">
-              <span>3часа</span>
-              <a href="href#" class='service_more'></a>
+            <div class="service__info">
+              <h3 class="services__subtitle">Разовое посещение</h3>
+              <p>Впервые здесь? Тогда эта возможность точно для вас. Приходите на разовое занятие
+                и проникнетесь атмосферой школы, познакомитесь с инструкторами и узнаете
+                о том, как проходит обучение. После занятия мы определим ваш уровень и прикинем план занятий</p>
+              <div class="service__links">
+                <span>3 часа</span>
+                <a href="href#" class='service_more'></a>
+              </div>
             </div>
-          </div>
           </article>
 
-          <article class="service">
-            <div class="service_photo">
-              <!-- TODO: Див вокруг картинки не нужен -->
-              <img src="images/service_img-2.jpg" alt="">
+           <article class="service__article">
+            <!-- TODO: Див вокруг картинки не нужен -->
+            <div class="service__photo">
+              <img src="images/service_img-1.jpg" alt="">
             </div>
-          <div class="service_info">
-            <h3 class="subtitle">разовое посещение</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius explicabo voluptatem minus sit a voluptate!</p>
-            <div class="service_links">
-              <span>3часа</span>
-              <a href="href#" class='service_more'></a>
+            <div class="service__info">
+              <h3 class="services__subtitle">Краткий курс</h3>
+              <p>Экспресс курс рассчитан на тех, кто хочет повысить свой уровень в короткий срок, узнать новые техники катания и получить лайфхаки “как кататься как чемпион” от опытных инструкторов, подходит как для новичков, так и более опытных</p>
+              <div class="service__links">
+                <span>5 занятий</span>
+                <a href="href#" class='service_more'></a>
+              </div>
             </div>
-          </div>
           </article>
 
-          <article class="service">
-            <div class="service_photo">
-              <!-- TODO: Див вокруг картинки не нужен -->
-              <img src="images/service_img-3.jpg" alt="">
+          <article class="service__article">
+            <!-- TODO: Див вокруг картинки не нужен -->
+            <div class="service__photo">
+              <img src="images/service_img-1.jpg" alt="">
             </div>
-          <div class="service_info">
-            <h3 class="subtitle">разовое посещение</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius explicabo voluptatem minus sit a voluptate!</p>
-            <div class="service_links">
-              <span>3часа</span>
-              <a href="href#" class='service_more'></a>
+            <div class="service__info">
+              <h3 class="services__subtitle">Полный курс</h3>
+              <p>Продвинутый курс для самых вдохновленных горными лыжами и сноубордом, здесь вы не только улучшите свою технику, но и получите много дополнительных обучающих материалов и видео-уроков от участников мировых чемпионатов, здесь вы узнаете все</p>
+              <div class="service__links">
+                <span>10 занятий</span>
+                <a href="href#" class='service_more'></a>
+              </div>
             </div>
-          </div>
           </article>
         </div>
-      </div>
     </section>
 
     <section class="advantages">
-      <!-- TODO: Тоже лишняя обертка -->
-      <div class="container">
-        <h2 class="title">Почему мы</h2>
-        <ul class="advantages_list">
+        <h2 class="advantages__title">Почему мы</h2>
+        <ul class="advantages__list">
           <!-- TODO: Почему ты здесь выбрала список? -->
           <!-- на занятии преподаватель сказал, что эту часть можно сделать списком.
             Я не знала как это сделать, поэтому пришось пробовать, прозвучало как вызов:) и вроде даже получилось. Но самы бы не подумала бы сделать списком, сделала бы div-ами -->
-          <li class="item_advantage">
+          <li class="advantages__item">
             <img src="images/adv-1.png" alt="advantage">
             <h3 class="subtitle">100% гарантия результата</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste officiis molestias, sed?</p>
+            <p>Уверены — научиться кататься и улучшить свой навык может каждый, и мы гарантируем результат уже через 5 занятий</p>
           </li>
-          <li class="item_advantage">
+          <li class="advantages__item">
             <img src="images/adv-2.png" alt="advantage">
             <h3 class="subtitle">Опытные инструкторы</h3>
-            <p>Totam corrupti modi accusantium sed deleniti necessitatibus officiis nulla est delectus sit.</p>
+            <p>У всех инструкторов школы есть международный сертификат, который дает право обучать катанию на сноуборде и горных лыжах</p>
           </li>
-          <li class="item_advantage">
+          <li class="advantages__item">
             <img src="images/adv-3.png" alt="advantage">
-            <h3 class="subtitle">Индивидуаьные занятия и расписания</h3>
-            <p>Voluptas quia velit sequi voluptate similique tempore ea autem, quaerat repudiandae vitae.</p>
+            <h3 class="subtitle">Индивидуальные занятия и расписание</h3>
+            <p>Мы любим индивидуальный подход, поэтому все занятия с тренером — персональные, а график обучения составляете вы сами</p>
           </li>
-          <li class="item_advantage">
+          <li class="advantages__item">
             <img src="images/adv-4.png" alt="advantage">
             <h3 class="subtitle">Инвентарь и одежда</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste officiis molestias, sed?</p>
+            <p>Все, что необходимо для комфортного занятия - включено в стоимость, с нами не нужно беспокоиться об аренде снаряжения и покупке дорогой одежды</p>
           </li>
-          <li class="item_advantage">
+          <li class="advantages__item">
             <img src="images/adv-5.png" alt="advantage">
             <h3 class="subtitle">Безопасность</h3>
-            <p>Totam corrupti modi accusantium sed deleniti necessitatibus officiis nulla est delectus sit.</p>
+            <p>Каждый инструктор подбирает технику катания и угол склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p>
           </li>
-          <li class="item_advantage">
+          <li class="advantages__item">
             <img src="images/adv-6.png" alt="advantage">
             <h3 class="subtitle">Трансфер</h3>
-            <p>Voluptas quia velit sequi voluptate similique tempore ea autem, quaerat repudiandae vitae.</p>
+            <p>30 минут и вы на месте, столько примерно занимает дорога из центра города до склона на нашем бесплатном трансфере, который легко забронировать</p>
           </li>
         </ul>
-      </div>
     </section>
 
     <section class="discount">
+      <div class="discount__container">
       <!-- TODO: Лишняя обертка -->
-      <div class="container">
-        <h2 class="title white">Скидки на абонементы</h2>
-          <ul class="discount_list">
-            <li class="item_discount white">
-              <h3 class="subtitle">Пробуй</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <!-- на фоне этого блока изображение во всю ширину экрана, я не знаю как сделать без второй обертки) -->
+        <h2 class="discount__title">Скидки на абонементы</h2>
+          <ul class="discount__list">
+            <li class="discount__item">
+              <span class="discount__subtitle">Пробуй</span>
+              <p class="discount__descr">Дарим скидку <span class="discount__descr--accent">5% </span>новичкам, прошедшим разовое занятие</p>
             </li>
-            <li class="item_discount">
-              <h3 class="subtitle">Катайся вместе</h3>
-              <p>Porro itaque, ex, officiis fugiat vitae cupiditate.</p>
+            <li class="discount__item">
+              <span class="discount__subtitle">Катайся вместе</span>
+              <p class="discount__descr">Получи скидку <span class="discount__descr--accent">10%, </span> если друг записался по твоей рекомендации.</p>
             </li>
-            <li class="item_discount">
-              <h3 class="subtitle">Учись всей семьей</h3>
-              <p>Mollitia perspiciatis nisi perferendis nihil laudantium eaque!</p>
+            <li class="discount__item">
+              <span class="discount__subtitle">Учись всей семьей</span>
+              <p class="discount__descr">Покупай абонемент для себя и получи скидку <span class="discount__descr--accent">15% </span> для ребенка</p>
             </li>
           </ul>
-        <a href="#" class="btn">Записаться</a>
-      </div>
+        <a href="#" class="btn-invert">Записаться</a>
+        </div>
     </section>
 
     <section class="team">
-      <div class="container">
-        <h2 class="title">Команда</h2>
-        <div class="team_content">
+        <h2 class="team__title">Команда</h2>
+        <div class="team__content">
           <div class="team_photo">
             <!-- TODO: Див вокруг картнки не нужен -->
             <img src="images/team.png" alt="team">
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem facilis nisi officiis reiciendis laudantium, placeat adipisci magni labore magnam quis. Officia veritatis neque ullam deserunt eum est praesentium incidunt rem.</p>
+          <p class="team__descr">Привет! Мы — команда инструкторов ICE ACE, с нами вы научитесь кататься как настоящие асы,
+          потому что мы знаем, что такое выкладываться на склоне, бороться со стихией, добиваться высоких результатов и покорять самые сложные трассы. В наших рядах призеры мировых чемпионатов и они готовы поделиться своим ценным опытом, чтобы каждый урок стал вашей личной победой</p>
           <a href="#" class="btn">Выбрать инструктора</a>
         </div>
-      </div>
     </section>
 
     <section class="community">
-      <div class="container">
-        <h2 class="title">Сообщество</h2>
+        <h2 class="community__title">Сообщество</h2>
         <!-- нужен ли div? -->
         <!-- TODO: Нет, не нужен :))) -->
-        <p class='description_team'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio vitae quia, amet facere? Laudantium cum voluptatibus odit, ut eum iusto reprehenderit eius vel saepe consequuntur. Cupiditate, exercitationem dolorem velit.
+        <p class="community_descr">ICE ACЕ — не только школа, а целое комьюнити вдохновленных снегом и горами людей, мы без ума от сноуборда и горных лыж и часто делимся важными событиями в социальных сетях, следите за нами
+        на канале Youtube и в Instagram или приходи к нам, мы всё расскажем.
         </p>
         <iframe src="https://yandex.ru/map-widget/v1/-/CBeiaLvSLD" width="1160" height="360" frameborder="0"></iframe>
-      </div>
     </section>
 
     <section class="galery">
-      <div class="container">
-        <h2 class="title">#ice_ace_community</h2>
-        <div class="galery_photos">
-          <!-- TODO: Див вокруг каждой картинки не нужен. Каждая картинка в этом разделе это ссылка -->
-          <a href="#" class="galery_item"><img src="images/galery_1.jpg" alt="#ice_ace_community"></a>
-          <a href="#" class="galery_item"><img src="images/galery_2.jpg" alt="#ice_ace_community"></a>
-          <a href="#" class="galery_item"><img src="images/galery_3.jpg" alt="#ice_ace_community"></a>
-          <a href="#" class="galery_item"><img src="images/galery_4.jpg" alt="#ice_ace_community"></a>
-          <a href="#" class="galery_item"><img src="images/galery_5.jpg" alt="#ice_ace_community"></a>
-          <a href="#" class="galery_item"><img src="images/galery_6.jpg" alt="#ice_ace_community"></a>
-
+        <h2 class="galery__title">#ice_ace_community</h2>
+        <div class="galery__photos">
+          <a href="#" class="galery__item"><img src="images/galery_1.jpg" alt="#ice_ace_community"></a>
+          <a href="#" class="galery__item"><img src="images/galery_2.jpg" alt="#ice_ace_community"></a>
+          <a href="#" class="galery__item"><img src="images/galery_3.jpg" alt="#ice_ace_community"></a>
+          <a href="#" class="galery__item"><img src="images/galery_4.jpg" alt="#ice_ace_community"></a>
+          <a href="#" class="galery__item"><img src="images/galery_5.jpg" alt="#ice_ace_community"></a>
+          <a href="#" class="galery__item"><img src="images/galery_6.jpg" alt="#ice_ace_community"></a>
         </div>
-      </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <div class="footer_links">
+    <div class="footer__container">
+      <div class="footer__links">
         <div class="logo">
           <a href="#"><img src="images/logo.png" alt="logo" class='logo_img'></a>
         </div>
-        <ul class="social_list">
-          <li class="social_item"><a href="#" class="social_links-yt"></a></li>
-          <li class="social_item"><a href="#" class="social_links-in"></a></li>
-          <li class="social_item"><a href="#" class="social_links-fb"></a></li>
-          <li class="social_item"><a href="#" class="social_links-vk"></a></li>
+        <ul class="social">
+          <li class="social__item"><a href="#" class="social__links-yt"></a></li>
+          <li class="social__item"><a href="#" class="social__links-in"></a></li>
+          <li class="social__item"><a href="#" class="social__links-fb"></a></li>
+          <li class="social__item"><a href="#" class="social__links-vk"></a></li>
         </ul>
         <div class="contacts">
           <a href="tel:88007654749" class="phone-link">88007654749</a>
@@ -217,16 +206,15 @@
         </div>
       </div>
       <div class="footer_nav">
-        <p class="copyrigth">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <nav class="main-nav">  <!-- nav? -->
-          <!-- TODO: Да, здесь можно и nav -->
-          <ul>
-          <li><a href="#">Lorem.</a></li>
-          <li><a href="#">Dignissimos?</a></li>
-          <li><a href="#">Veritatis?</a></li>
-          <li><a href="#">Consequatur.</a></li>
+        <p class="copyrigth">© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены</p>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Расписание</a></li>
+          <li><a href="#">Инструкторы</a></li>
+          <li><a href="#">Стоимость</a></li>
+          <li><a href="#">Как добраться</a></li>
         </ul>
-        </nav>
+      </nav>
       </div>
     </div>
   </footer>
