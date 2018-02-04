@@ -323,9 +323,18 @@ footer{
 figure{
   margin:0px;
 }
+.instructor__list-photo img{
+   width: 230px;
+  height: 232px;
+}
 .instructor__list-photo{
   display: inline-block;
-  float: left;
+/*  float: left;*/
+}
+
+.instructor__list-photo--active{
+  display: inline-block;
+/*  float: left;*/
 }
 
 .instructor__list-name{
@@ -335,4 +344,10 @@ figure{
   font-size: 20px;
   color: #000;
   line-height: 23px;
+}
+
+.review{
+  background-image: url(../images/Snowboard-Wallpaper-Nicolas-Muller-Laax-1920x1080.jpg);
+  width: 1040px;
+  height: 225px;
 }
