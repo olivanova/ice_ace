@@ -42,7 +42,10 @@ body{
   font-weight: 400;
   color: #111;
 }
-
+a{
+  text-decoration: none;
+  color: #111;
+}
 .promo__container{
   width: 1160px;
   margin-left: auto;
@@ -86,9 +89,20 @@ body{
 
 .main-nav{
   display: inline-block;
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
 /*  float: right;*/
 }
 
+.phone-link{
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+}
 .main-nav li{
   display: inline-block;
 }
@@ -127,10 +141,23 @@ body{
   font-size: 40px;
 }
 
-.services__subtitle{
+.services__descr{
+  font-family: 'FuturaPT-Medium', sans-serif;;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.services__subtitle {
   font-family: 'FuturaPT-Demi', sans-serif;;
   font-style: normal;
   font-weight: 600;
+  font-size: 20px;
+}
+.services__time {
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .advantages{
@@ -144,6 +171,12 @@ body{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+}
+.advantages__subtitle{
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .advantages__list{
@@ -164,6 +197,14 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+.discount__subtitle{
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+
 .discount__list{
   padding-left:0px;
 }
@@ -259,4 +300,39 @@ footer{
   width: 40px;
   height: 40px;
   background-position: -55px -55px;
+}
+.mail-link{
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+}
+/*instructors.html*/
+.instructors{
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instructors__title{
+  font-family: 'FuturaPT-Heavy', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+figure{
+  margin:0px;
+}
+.instructor__list-photo{
+  display: inline-block;
+  float: left;
+}
+
+.instructor__list-name{
+  font-family: 'FuturaPT-Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  line-height: 23px;
 }
