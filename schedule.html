@@ -3,149 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <title>Расписание</title>
+    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="header">  <!-- header__container?? -->
       <div class="logo">
         <a href="index.html">
-          <img src="http://via.placeholder.com/100x50" alt="logo" class='logo_img'>
+          <img src="images/logo.png" alt="logo" class='logo_img'>
         </a>
       </div>
 
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Расписание</a></li>
-          <li><a href="instructors.html">Инструкторы</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="#">Инструкторы</a></li>
           <li><a href="#">Стоимость</a></li>
           <li><a href="#">Как добраться</a></li>
         </ul>
       </nav>
-      <div class="phone">
-        <a href="tel:88007654749" class="phone-link">88007654749</a>
-      </div>
+        <!-- TODO: Див вокруг ссылки не нужен -->
+      <a href="tel:88007654749" class="phone-link">8 (800) 800-80-80</a>
       <a href="#" class="btn">Записаться</a>
     </div>
   </header>
   <main>
     <section class="program">
-      <h2 class="title">Выбрать программу</h2>
-      <table class="program_list">
+      <h2 class="program__title">Выбрать программу</h2>
+      <table class="program__list">
         <thead>
           <tr>
-            <th>Спорт</th>
-            <th>Инструктор</th>
-            <th>Дата</th>
-            <th>Время</th>
-            <th>Стоимость</th>
+            <th class="program__list-title">Спорт</th>
+            <th class="program__list-title">Инструктор</th>
+            <th class="program__list-title">Дата</th>
+            <th class="program__list-title">Время</th>
+            <th class="program__list-title">Стоимость</th>
             <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Lorem.</td>
-            <td>Iure.</td>
-            <td>Voluptatem.</td>
-            <td>Dolorem!</td>
-            <td>Suscipit.</td>
-            <td> <a href="#">Doloremque!</a></td>
+            <td>Сноуборд</td>
+            <td>Константин Константинопольский</td>
+            <td>30.03.2017</td>
+            <td>12:00</td>
+            <td>2000 руб.</td>
+            <td> <a href="#">Записаться</a></td>
           </tr>
           <tr>
-            <td>Lorem.</td>
-            <td>Possimus.</td>
-            <td>Cum.</td>
-            <td>Eveniet?</td>
-            <td>Beatae?</td>
-            <td><a href="#">Sit.</a></td>
+            <td>Сноуборд</td>
+            <td>Константин Константинопольский</td>
+            <td>01.04.2017</td>
+            <td>12:00</td>
+            <td>2000 руб.</td>
+            <td><a href="#">Записаться</a></td>
           </tr>
           <tr>
-            <td>Lorem.</td>
-            <td>Cupiditate.</td>
-            <td>Nisi!</td>
-            <td>Distinctio.</td>
-            <td>Velit.</td>
-            <td><a href="#">Quaerat?</a></td>
+            <td>Лыжи</td>
+            <td>Степан Александров</td>
+            <td>01.04.2017</td>
+            <td>13:00</td>
+            <td>3000 руб.</td>
+            <td><a href="#">Записаться</a></td>
           </tr>
           <tr>
-            <td>Lorem.</td>
-            <td>Molestiae.</td>
-            <td>Corrupti.</td>
-            <td>Expedita.</td>
-            <td>In.</td>
-            <td><a href="#">Quidem!</a></td>
+            <td>Лыжи</td>
+            <td>Виталий Сергеев</td>
+            <td>03.04.2017</td>
+            <td>14:00</td>
+            <td>4000 руб.</td>
+            <td><a href="#">Записаться</a></td>
           </tr>
           <tr>
-            <td>Lorem.</td>
-            <td>Esse?</td>
-            <td>Saepe.</td>
-            <td>Fugit?</td>
-            <td>Repellendus!</td>
-            <td><a href="#">Optio.</a></td>
+            <td>Сноуборд</td>
+            <td>Арсений Петров</td>
+            <td>04.04.2017</td>
+            <td>14:00</td>
+            <td>4000 руб.</td>
+            <td><a href="#">Записаться</a></td>
           </tr>
         </tbody>
       </table>
-      <div class="program_info">
-        <div class="program_instructor">
-          <figure class="program_instructor_photo">
-            <img src="http://via.placeholder.com/100x100" alt="">
-            <figcaption>Константин Константинопольский</figcaption>
+    </section>
+      <section class="program-info">
+        <div class="program-info__instructor">
+          <figure class="program-info__photo">
+            <img src="images/program-kons-konstantinopolsky.jpg" alt="">
+            <figcaption class="program-info__name">Константин Константинопольский</figcaption>
           </figure>
         </div>
-        <div class="program_description">
-          <span class="skill_title">Lorem ipsum dolor sit.</span>
-          <span>Lorem ipsum dolor sit amet.</span>
-          <h3 class="subtitle">Lorem ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis id soluta incidunt architecto excepturi eveniet magni adipisci itaque. Nihil, reiciendis, dignissimos. Obcaecati fuga assumenda officia consectetur quo, possimus fugit quis!</p>
+        <div class="program-info_description">
+          <h3 class="program-info__title">Free ride / продвинутый уровень</h3>
+          <span>Дата занятия — 30 марта 2017 года.</span>
+          <span class="program-info__subtitle">Абонемент на разовое посещение (3 часа)</span>
+          <p>Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.</p>
           <a href="#">Узнать больше</a>
         </div>
-        <div class="program_price">
+        <div class="program-info__price">
           <span class="price">2000</span>
           <a href="#" class="btn">Купить</a>
         </div>
       </div>
       <div class="pagination">
-        <a href="#" class="pagination_arrow-prew"></a>
-        <div class="pagination_number">1</div>
-        <div class="pagination_number">2</div>
-        <div class="pagination_number">3</div>
-        <div class="pagination_number">4</div>
-        <div class="pagination_number">5</div>
-        <a href="#" class="pagination_arrow-next"></a>
+        <a href="#" class="pagination__arrow--prew"></a>
+        <div class="pagination__number">1</div>
+        <div class="pagination__number">2</div>
+        <div class="pagination__number">3</div>
+        <div class="pagination__number">4</div>
+        <div class="pagination__number">5</div>
+        <a href="#" class="pagination__arrow--next"></a>
       </div>
-      <h2 class="title">Заказать</h2>
+    </section>
+    <section class="form-call">
+      <h2 class="form-call__title">Заказать обратный звонок</h2>
       <form>
       </form>
     </section>
-
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer_links">
+   <footer>
+    <div class="footer__container">
+      <div class="footer__links">
         <div class="logo">
-          <a href="#"><img src="http://via.placeholder.com/100x50" alt="logo" class='logo_img'></a>
+          <a href="#"><img src="images/logo.png" alt="logo" class='logo_img'></a>
         </div>
-        <ul class="social_list">
-          <li class="social_item"><a href="#" class="social_links-yt"></a></li>
-          <li class="social_item"><a href="#" class="social_links-in"></a></li>
-          <li class="social_item"><a href="#" class="social_links-fb"></a></li>
-          <li class="social_item"><a href="#" class="social_links-vk"></a></li>
+        <ul class="social">
+          <li class="social__item"><a href="#" class="social__links-yt"></a></li>
+          <li class="social__item"><a href="#" class="social__links-in"></a></li>
+          <li class="social__item"><a href="#" class="social__links-fb"></a></li>
+          <li class="social__item"><a href="#" class="social__links-vk"></a></li>
         </ul>
-        <div class="contacts">
-          <a href="tel:88007654749" class="phone-link">88007654749</a>
+        <div class="footer__contacts">
+          <a href="tel:88007654749" class="phone-link">8 (800) 800-80-80</a>
           <a href="mailto:hello@ice_ace.com" class="mail-link">hello@ice_ace.com</a>
         </div>
       </div>
-      <div class="footer_nav">
-        <p class="copyrigth">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <nav class="main-nav">  <!-- nav? -->
-          <ul>
-          <li><a href="#">Lorem.</a></li>
-          <li><a href="#">Dignissimos?</a></li>
-          <li><a href="#">Veritatis?</a></li>
-          <li><a href="#">Consequatur.</a></li>
+      <div class="footer__nav">
+        <p class="copyrigth">© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены</p>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Расписание</a></li>
+          <li><a href="#">Инструкторы</a></li>
+          <li><a href="#">Стоимость</a></li>
+          <li><a href="#">Как добраться</a></li>
         </ul>
-        </nav>
+      </nav>
       </div>
     </div>
   </footer>

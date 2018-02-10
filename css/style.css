@@ -351,3 +351,73 @@ figure{
   width: 1040px;
   height: 225px;
 }
+
+.program {
+  width: 1160px;
+  margin: 0px auto 0px auto;
+}
+.program__list{
+  width: 1160px;
+  border: 1px solid #000;
+}
+
+.program__title{
+  font-family: 'FuturaPT-Heavy', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+.program__list-title {
+  font-family: 'FuturaPT-Medium', sans-serif;;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.program-info {
+  width: 1160px;
+  margin: 0px auto 0px auto;
+}
+.program-info__title {
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+}
+
+.program-info__subtitle{
+  font-family: 'FuturaPT-Medium', sans-serif;;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.program-info__photo img{
+  border: 3px solid #8de8ab;
+  border-radius: 100px;
+}
+
+.program-info__name{
+  padding: 8px 19px;
+  width: 160px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'FuturaPT-Book', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.form-call {
+  width: 1160px;
+  margin: 0px auto 0px auto;
+}
+.form-call__title {
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+}
