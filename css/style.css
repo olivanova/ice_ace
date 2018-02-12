@@ -42,23 +42,33 @@ body{
   font-weight: 400;
   color: #111;
 }
+
+html{
+  box-sizing: border-box;
+}
+
 a{
   text-decoration: none;
   color: #111;
 }
+
+ul{
+ margin: 0;
+ padding: 0;
+}
+.promo{
+  background-color: #000;
+  background-image: url(../images/promo_bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  padding-top: 76px;
+  padding-bottom: 330px;
+}
+
 .promo__container{
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.promo{
-  background-image: url(../images/promo_bg.jpg);
-  background-repeat: no-repeat;
-  width: 1280px;
-  height: 536px;
-  padding-top: 76px;
-  margin-bottom: 37px;
 }
 
 .promo h1{
@@ -79,44 +89,118 @@ a{
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  padding: 35px 0;
+}
+
+.header:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+.services:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.advantages:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+.discount:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+.team:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+.community:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+.galery:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+.footer__container:after{
+  content:'';
+  display: block;
+  clear: both;
 }
 .logo {
-  display: inline-block;
+  float: left;
   width: 160px;
   height: 55px;
-  vertical-align: middle;
+  vertical-align: top;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  /*чтоб уменьшилась картинка вместе с уменьшением размера div*/
 }
 
 .main-nav{
-  display: inline-block;
-  font-family: 'FuturaPT-Demi', sans-serif;;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  text-transform: uppercase;
-/*  float: right;*/
+  float: left;
+  width: 620px;
+  text-align: center;
+  padding: 18px 0;
 }
 
-.phone-link{
+.main-nav__item{
   font-family: 'FuturaPT-Demi', sans-serif;;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 0 10px;
 }
+
+.header__contacts{
+  float: right;
+  width: 380px;
+}
+.header__contacts:after{
+ content: '';
+ display: inline-block;
+}
+
 .main-nav li{
   display: inline-block;
+  margin: 0 5px;
 }
+
+.contacl-link{
+  float: left;
+  font-family: 'FuturaPT-Demi', sans-serif;;
+  font-size: 22px;
+  padding: 15px 0;
+}
+
+.btn--float-right{
+  float: right;
+  margin: 6px 0;
+}
+
 .btn{
+  display: inline-block;
   text-decoration: none;
-  padding: 11px 19px 11px 19px;
+  padding: 11px 0px;
+  width: 135px;
   color: #74e196;
-  border: 2px #000 solid;
+  text-align: center;
+  border: 2px solid #000 ;
   font-family: FuturaPT-Heavy, sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
 }
+
 .btn-invert{
   text-decoration: none;
   padding: 17px;
@@ -128,10 +212,19 @@ a{
   font-size: 15px;
   text-transform: uppercase;
 }
+
+[class*="title"]{
+  text-align: center;
+}
+[class*="subtitle"]{
+  text-align: center;
+}
 .services{
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 37px;
+  font-size: 0px;
 }
 
 .services__title{
@@ -139,25 +232,70 @@ a{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+  margin: 0px 0px 37px 0px;
 }
 
 .services__descr{
+  margin-bottom: 40px;
   font-family: 'FuturaPT-Medium', sans-serif;;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
+  text-align: center;
 }
 .services__subtitle {
   font-family: 'FuturaPT-Demi', sans-serif;;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
+  text-align: left;
 }
 .services__time {
   font-family: 'FuturaPT-Demi', sans-serif;;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
+}
+.service__article{
+  width: 360px;
+  float: left;
+}
+
+.service__article--course{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.service__article--course:last-child{
+  margin-top: 40px;
+}
+
+.service__photo{
+  margin-bottom: 40px;
+}
+
+
+.service__info--course{
+  vertical-align: top;
+  margin-left: 40px;
+  width: 360px;
+  height: 217px;
+  display: inline-block;
+}
+
+.services p{
+  font-size: 15px;
+}
+
+.service__links{
+
+}
+
+.services__time{
+  float: left;
+}
+.service_more{
+  float: right;
 }
 
 .advantages{

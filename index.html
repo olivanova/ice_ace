@@ -12,25 +12,30 @@
     <h1>Школа сноубординга и горных лыж<br><span>в Санкт-Петербурге</span></h1>
   </div>
 </div>
+
   <header>
     <div class="header">  <!-- header__container?? -->
       <div class="logo">
         <a href="#">
-          <img src="images/logo.png" alt="logo" class='logo_img'>
+          <img src="images/logo.png" alt="logo" class='logo__img'>
         </a>
       </div>
 
       <nav class="main-nav">
         <ul>
-          <li><a href="schedule.html">Расписание</a></li>
-          <li><a href="instructors.html">Инструкторы</a></li>
-          <li><a href="#">Стоимость</a></li>
-          <li><a href="#">Как добраться</a></li>
+          <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
+          <li><a href="instructors.html" class="main-nav__item">Инструкторы</a></li>
+          <li><a href="#" class="main-nav__item">Стоимость</a></li>
+          <li><a href="#" class="main-nav__item">Как добраться</a></li>
         </ul>
       </nav>
+
         <!-- TODO: Див вокруг ссылки не нужен -->
-      <a href="tel:88007654749" class="phone-link">8 (800) 800-80-80</a>
-      <a href="#" class="btn">Записаться</a>
+      <div class="header__contacts">
+        <a href="tel:88007654749" class="contacl-link">8 (800) 800-80-80</a>
+
+        <a href="#" class="btn btn--float-right">Записаться</a>
+      </div>
     </div>
   </header>
 
@@ -38,16 +43,16 @@
     <section class="services">
       <!-- TODO:  services и container выполняют одну и ту же функцию. Выбери что то одно-->
         <h2 class="services__title">Наши услуги</h2>
-        <p class="services__descr">Для взрослых и детей 6+ / любого уровня подготовки</p>
+        <h3 class="services__descr">Для взрослых и детей 6+ / любого уровня подготовки </h3>
+
         <div class="services-content">
 
           <article class="service__article">
             <!-- TODO: Див вокруг картинки не нужен -->
-            <div class="service__photo">
-              <img src="images/service_img-1.jpg" alt="">
-            </div>
+            <img class="service__photo" src="images/service_img-1.jpg" alt="">
+
             <div class="service__info">
-              <h3 class="services__subtitle">Разовое посещение</h3>
+              <span class="services__subtitle">Разовое посещение</span>
               <p>Впервые здесь? Тогда эта возможность точно для вас. Приходите на разовое занятие
                 и проникнетесь атмосферой школы, познакомитесь с инструкторами и узнаете
                 о том, как проходит обучение. После занятия мы определим ваш уровень и прикинем план занятий</p>
@@ -58,13 +63,11 @@
             </div>
           </article>
 
-           <article class="service__article">
+           <article class="service__article--course">
             <!-- TODO: Див вокруг картинки не нужен -->
-            <div class="service__photo">
-              <img src="images/service_img-2.jpg" alt="">
-            </div>
-            <div class="service__info">
-              <h3 class="services__subtitle">Краткий курс</h3>
+              <img class="service__photo--course" src="images/service_img-2.jpg" alt="">
+            <div class="service__info--course">
+              <span class="services__subtitle">Краткий курс</span>
               <p>Экспресс курс рассчитан на тех, кто хочет повысить свой уровень в короткий срок, узнать новые техники катания и получить лайфхаки “как кататься как чемпион” от опытных инструкторов, подходит как для новичков, так и более опытных</p>
               <div class="service__links">
                 <span class="services__time">5 занятий</span>
@@ -73,13 +76,10 @@
             </div>
           </article>
 
-          <article class="service__article">
-            <!-- TODO: Див вокруг картинки не нужен -->
-            <div class="service__photo">
-              <img src="images/service_img-3.jpg" alt="">
-            </div>
-            <div class="service__info">
-              <h3 class="services__subtitle">Полный курс</h3>
+          <article class="service__article--course">
+              <img class="service__photo--course" src="images/service_img-3.jpg" alt="">
+            <div class="service__info--course">
+              <span class="services__subtitle">Полный курс</span>
               <p>Продвинутый курс для самых вдохновленных горными лыжами и сноубордом, здесь вы не только улучшите свою технику, но и получите много дополнительных обучающих материалов и видео-уроков от участников мировых чемпионатов, здесь вы узнаете все</p>
               <div class="service__links">
                 <span class="services__time">10 занятий</span>
@@ -209,10 +209,10 @@
         <p class="copyrigth">© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены</p>
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Расписание</a></li>
-          <li><a href="#">Инструкторы</a></li>
-          <li><a href="#">Стоимость</a></li>
-          <li><a href="#">Как добраться</a></li>
+          <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
+          <li><a href="instructors.html" class="main-nav__item">Инструкторы</a></li>
+          <li><a href="#" class="main-nav__item">Стоимость</a></li>
+          <li><a href="#" class="main-nav__item">Как добраться</a></li>
         </ul>
       </nav>
       </div>
