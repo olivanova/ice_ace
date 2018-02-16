@@ -69,6 +69,8 @@ ul{
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo h1{
@@ -202,13 +204,14 @@ ul{
 }
 
 .btn-invert{
+  display: inline-block;
   text-decoration: none;
-  padding: 17px;
+  padding: 11px 0px;
+  width: 135px;
   color: #74e196;
+  text-align: center;
   border: 2px #fff solid;
   font-family: FuturaPT-Heavy, sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -223,8 +226,9 @@ ul{
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
   padding-top: 37px;
-  font-size: 0px;
 }
 
 .services__title{
@@ -232,11 +236,11 @@ ul{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  margin: 0px 0px 37px 0px;
+  margin: 0 0 41px 0;
 }
 
 .services__descr{
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   font-family: 'FuturaPT-Medium', sans-serif;;
   font-style: normal;
   font-weight: 500;
@@ -259,11 +263,11 @@ ul{
 .service__article{
   width: 360px;
   float: left;
+  margin-right: 40px;
 }
 
 .service__article--course{
-  display: inline-block;
-  margin-left: 40px;
+  display: flex;
 }
 
 .service__article--course:last-child{
@@ -274,13 +278,16 @@ ul{
   margin-bottom: 40px;
 }
 
-
 .service__info--course{
-  vertical-align: top;
   margin-left: 40px;
   width: 360px;
-  height: 217px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+
+.service__info{
+  display: flex;
+  flex-direction: column;
 }
 
 .services p{
@@ -288,7 +295,7 @@ ul{
 }
 
 .service__links{
-
+  margin-top:auto;
 }
 
 .services__time{
@@ -309,6 +316,7 @@ ul{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+  margin: 73px 0 13px 0;
 }
 .advantages__subtitle{
   font-family: 'FuturaPT-Demi', sans-serif;;
@@ -319,21 +327,44 @@ ul{
 
 .advantages__list{
   padding-left:0px;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
 }
+
+.advantages__list img{
+  margin: 28px auto 32px auto;
+}
+
 .advantages__item{
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   width: 360px;
+  text-align: center;
 }
 
 .discount{
   background-image: url(../images/discount_bg.jpg);
-  height: 362px;
+  background-size: cover;
+  background-position: center bottom;
+  padding-top: 44px;
+  padding-bottom: 51px;
   color: #fff;
 }
 .discount__container{
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.discount__title{
+  font-family: 'FuturaPT-Heavy', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0px 0px 41px 0px;
+  color: #fff;
 }
 .discount__subtitle{
   font-family: 'FuturaPT-Demi', sans-serif;;
@@ -344,22 +375,49 @@ ul{
 }
 
 .discount__list{
-  padding-left:0px;
+  margin-bottom: 46px;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
 }
 
 .discount__item{
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   width: 250px;
+  text-align: center;
 }
 
 .discount__descr--accent{
   color: #83eba5;
+}
+.btn--center{
+  margin: 0 auto 0 auto;
+}
+
+.btn--wide{
+  width: 244px;
 }
 
 .team{
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.team__content{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.team__content img{
+  margin: 0 auto 0 auto;
+}
+.team__descr{
+  margin: -152px auto 40px auto;
 }
 
 .team__title{
@@ -367,6 +425,7 @@ ul{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+  margin: 74px 0 41px 0;
 }
 
 .team__descr{
@@ -378,6 +437,8 @@ ul{
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .community__title{
@@ -385,12 +446,20 @@ ul{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+  margin: 81px 0 41px 0;
+}
+
+.community_descr{
+  width: 850px;
+  margin: 0 auto 41px auto;
+  text-align: center;
 }
 
 .galery{
   width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 110px auto 84px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .galery__title{
@@ -398,6 +467,10 @@ ul{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+}
+.galery__photos{
+  display: flex;
+  justify-content: space-between;
 }
 
 footer{
