@@ -56,6 +56,7 @@ ul{
  margin: 0;
  padding: 0;
 }
+
 .promo{
   background-color: #000;
   background-image: url(../images/promo_bg.jpg);
@@ -135,20 +136,17 @@ ul{
   display: block;
   clear: both;
 }
-.logo {
-  float: left;
-  width: 160px;
-  height: 55px;
-  vertical-align: top;
+c
+.main-nav{
+  display: none;
+}
+.phone-link{
+  display: none;
 }
 
-.logo img {
-  display: block;
-  width: 100%;
-  /*чтоб уменьшилась картинка вместе с уменьшением размера div*/
-}
 
 .main-nav{
+  display: block;
   float: left;
   width: 620px;
   text-align: center;
@@ -214,6 +212,7 @@ ul{
   font-family: FuturaPT-Heavy, sans-serif;
   font-size: 15px;
   text-transform: uppercase;
+}
 }
 
 [class*="title"]{
@@ -288,10 +287,13 @@ ul{
 .service__info{
   display: flex;
   flex-direction: column;
+  height: 244px;
 }
 
 .services p{
   font-size: 15px;
+  max-height: 160px;
+  overflow: hidden;
 }
 
 .service__links{

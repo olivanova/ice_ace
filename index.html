@@ -2,19 +2,22 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ice_ace</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_temp.css">
 </head>
 <body>
+
 <div class="promo">
   <div class="promo__container">
     <h1>Школа сноубординга и горных лыж<br><span>в Санкт-Петербурге</span></h1>
   </div>
+  <a href="#" class="btn btn--top-mobile">Записаться</a>
 </div>
 
   <header>
-    <div class="header">  <!-- header__container?? -->
+    <div class="header">
       <div class="logo">
         <a href="#">
           <img src="images/logo.png" alt="logo" class='logo__img'>
@@ -22,7 +25,10 @@
       </div>
 
       <nav class="main-nav">
-        <ul>
+        <a href="" class="main-nav__burger">
+          <img src="images/burger.svg" alt="menu">
+        </a>
+        <ul class="main-nav__list">
           <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
           <li><a href="instructors.html" class="main-nav__item">Инструкторы</a></li>
           <li><a href="#" class="main-nav__item">Стоимость</a></li>
@@ -30,6 +36,7 @@
         </ul>
       </nav>
 
+      <a href="#" class="btn btn--header">Записаться</a>
         <!-- TODO: Див вокруг ссылки не нужен -->
       <div class="header__contacts">
         <a href="tel:88007654749" class="contacl-link">8 (800) 800-80-80</a>
@@ -47,9 +54,11 @@
 
         <div class="services-content">
 
-          <article class="service__article">
+          <article class="service__article service__article--float-left">
             <!-- TODO: Див вокруг картинки не нужен -->
-            <img class="service__photo" src="images/service_img-1.jpg" alt="">
+            <div class="service__photo">
+             <img src="images/service_img-1.jpg" alt="">
+            </div>
 
             <div class="service__info">
               <span class="services__subtitle">Разовое посещение</span>
@@ -63,9 +72,11 @@
             </div>
           </article>
 
-           <article class="service__article--course">
+           <article class="service__article">
             <!-- TODO: Див вокруг картинки не нужен -->
-              <img class="service__photo--course" src="images/service_img-2.jpg" alt="">
+            <div class="service__photo--course">
+              <img src="images/service_img-2.jpg" alt="">
+            </div>
             <div class="service__info--course">
               <span class="services__subtitle">Краткий курс</span>
               <p>Экспресс курс рассчитан на тех, кто хочет повысить свой уровень в короткий срок, узнать новые техники катания и получить лайфхаки “как кататься как чемпион” от опытных инструкторов, подходит как для новичков, так и более опытных</p>
@@ -76,8 +87,10 @@
             </div>
           </article>
 
-          <article class="service__article--course">
-              <img class="service__photo--course" src="images/service_img-3.jpg" alt="">
+          <article class="service__article">
+            <div class="service__photo--course">
+              <img src="images/service_img-3.jpg" alt="">
+            </div>
             <div class="service__info--course">
               <span class="services__subtitle">Полный курс</span>
               <p>Продвинутый курс для самых вдохновленных горными лыжами и сноубордом, здесь вы не только улучшите свою технику, но и получите много дополнительных обучающих материалов и видео-уроков от участников мировых чемпионатов, здесь вы узнаете все</p>
@@ -92,41 +105,71 @@
 
     <section class="advantages">
         <h2 class="advantages__title">Почему мы</h2>
-        <ul class="advantages__list">
-          <!-- TODO: Почему ты здесь выбрала список? -->
-          <!-- на занятии преподаватель сказал, что эту часть можно сделать списком.
-            Я не знала как это сделать, поэтому пришось пробовать, прозвучало как вызов:) и вроде даже получилось. Но самы бы не подумала бы сделать списком, сделала бы div-ами -->
-          <li class="advantages__item">
-            <img src="images/adv-1.png" alt="advantage" width="60px" height="61px">
-            <span class="advantages__subtitle">100% гарантия результата</span>
-            <p>Уверены — научиться кататься и улучшить свой навык может каждый, и мы гарантируем результат уже через 5 занятий</p>
-          </li>
-          <li class="advantages__item">
-            <img src="images/adv-2.png" alt="advantage" width="53px" height="61px">
-            <span class="advantages__subtitle">Опытные инструкторы</span>
-            <p>У всех инструкторов школы есть международный сертификат, который дает право обучать катанию на сноуборде и горных лыжах</p>
-          </li>
-          <li class="advantages__item">
-            <img src="images/adv-3.png" alt="advantage" width="60px" height="61px">
-            <span class="advantages__subtitle">Индивидуальные занятия и расписание</span>
-            <p>Мы любим индивидуальный подход, поэтому все занятия с тренером — персональные, а график обучения составляете вы сами</p>
-          </li>
-          <li class="advantages__item">
-            <img src="images/adv-4.png" alt="advantage" width="60px" height="61px">
-            <span class="advantages__subtitle">Инвентарь и одежда</span>
-            <p>Все, что необходимо для комфортного занятия - включено в стоимость, с нами не нужно беспокоиться об аренде снаряжения и покупке дорогой одежды</p>
-          </li>
-          <li class="advantages__item">
-            <img src="images/adv-5.png" alt="advantage" width="60px" height="61px">
-            <span class="advantages__subtitle">Безопасность</span>
-            <p>Каждый инструктор подбирает технику катания и угол склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p>
-          </li>
-          <li class="advantages__item">
-            <img src="images/adv-6.png" alt="advantage" width="60px" height="61px">
-            <span class="advantages__subtitle">Трансфер</span>
-            <p>30 минут и вы на месте, столько примерно занимает дорога из центра города до склона на нашем бесплатном трансфере, который легко забронировать</p>
-          </li>
-        </ul>
+
+         <div class="advantages__list">
+
+          <div class="advantages__item">
+            <div class="advantages__ico">
+              <img src="images/adv-1.png" alt="advantage" width="60px" height="61px">
+            </div>
+
+            <div class="advantages__descr">
+              <span class="advantages__subtitle">100% гарантия результата</span>
+              <p>Уверены — научиться кататься и улучшить свой навык может каждый, и мы гарантируем результат уже через 5 занятий</p>
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__ico">
+              <img src="images/adv-2.png" alt="advantage" width="53px" height="61px">
+            </div>
+
+            <div class="advantages__descr">
+              <span class="advantages__subtitle">Опытные инструкторы</span>
+              <p>У всех инструкторов школы есть международный сертификат, который дает право обучать катанию на сноуборде и горных лыжах</p>
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__ico"><img src="images/adv-3.png" alt="advantage" width="60px" height="61px"></div>
+
+            <div class="advantages__descr">
+              <span class="advantages__subtitle">Индивидуальные занятия и расписание</span>
+              <p>Мы любим индивидуальный подход, поэтому все занятия с тренером — персональные, а график обучения составляете вы сами</p>
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__ico">
+              <img src="images/adv-4.png" alt="advantage" width="60px" height="61px">
+            </div>
+            <div class="advantages__descr">
+              <span class="advantages__subtitle">Инвентарь и одежда</span>
+              <p>Все, что необходимо для комфортного занятия - включено в стоимость, с нами не нужно беспокоиться об аренде снаряжения и покупке дорогой одежды</p>
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__ico">
+              <img src="images/adv-5.png" alt="advantage" width="60px" height="61px">
+            </div>
+            <div class="advantages__descr">
+              <span class="advantages__subtitle">Безопасность</span>
+              <p>Каждый инструктор подбирает технику катания и угол склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p>
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__ico">
+              <img src="images/adv-6.png" alt="advantage" width="60px" height="61px">
+            </div>
+            <div class="advantages__descr">
+              <span class="advantages__subtitle">Трансфер</span>
+              <p>30 минут и вы на месте, столько примерно занимает дорога из центра города до склона на нашем бесплатном трансфере, который легко забронировать</p>
+            </div>
+          </div>
+
+        </div>
     </section>
 
     <section class="discount">

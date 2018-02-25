@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Инструкторы</title>
 	<link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -10,22 +11,26 @@
   <header>
     <div class="header">  <!-- header__container?? -->
       <div class="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="logo" class='logo_img'>
+        <a href="#">
+          <img src="images/logo.png" alt="logo" class='logo__img'>
         </a>
       </div>
 
       <nav class="main-nav">
         <ul>
-          <li><a href="schedule.html">Расписание</a></li>
-          <li><a href="#">Инструкторы</a></li>
-          <li><a href="#">Стоимость</a></li>
-          <li><a href="#">Как добраться</a></li>
+          <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
+          <li><a href="instructors.html" class="main-nav__item">Инструкторы</a></li>
+          <li><a href="#" class="main-nav__item">Стоимость</a></li>
+          <li><a href="#" class="main-nav__item">Как добраться</a></li>
         </ul>
       </nav>
+
         <!-- TODO: Див вокруг ссылки не нужен -->
-      <a href="tel:88007654749" class="phone-link">8 (800) 800-80-80</a>
-      <a href="#" class="btn">Записаться</a>
+      <div class="header__contacts">
+        <a href="tel:88007654749" class="contacl-link">8 (800) 800-80-80</a>
+
+        <a href="#" class="btn btn--float-right">Записаться</a>
+      </div>
     </div>
   </header>
 
@@ -35,7 +40,8 @@
         <form> <!-- формы не проходили -->
           <div class="instructors__search">
             <input type="search" placeholder="Найти">
-            <input type="submit" value="">
+            <!-- <input type="submit" value=""> -->
+            <button type="submit">Найти</button>
           </div>
         </form>
         <!-- TODO: Див вокруг картинки не нужен. Див в ссылку не вкладывают -->
