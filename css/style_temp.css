@@ -267,23 +267,30 @@ ul{
   font-size: 14px;
   text-align: left;
 }
+
 .advantages__ico{
-  float: left;
+  width: 67px;
+  display: flex;
+  align-items: ;
 }
+.advantages__ico img{
+  margin-left: auto;
+}
+
 .advantages__descr{
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
+  margin-left: 19px;
+  width: 204px;
 }
 
 .advantages__descr p{
   margin-top: 8px;
+  font-size:12px ;
 }
-
 .advantages__item{
   display: inline-flex;
   position: relative;
-
 }
 
 .team__content img{
