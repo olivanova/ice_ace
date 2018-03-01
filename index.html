@@ -109,9 +109,7 @@
          <div class="advantages__list">
 
           <div class="advantages__item">
-            <div class="advantages__ico">
-              <img src="images/adv-1.png" alt="advantage" width="60px" height="61px">
-            </div>
+            <div class="advantages__ico ico-like"></div>
 
             <div class="advantages__descr">
               <span class="advantages__subtitle">100% гарантия результата</span>
@@ -120,9 +118,7 @@
           </div>
 
           <div class="advantages__item">
-            <div class="advantages__ico">
-              <img src="images/adv-2.png" alt="advantage" width="53px" height="61px">
-            </div>
+            <div class="advantages__ico ico-certificate"></div>
 
             <div class="advantages__descr">
               <span class="advantages__subtitle">Опытные инструкторы</span>
@@ -131,7 +127,7 @@
           </div>
 
           <div class="advantages__item">
-            <div class="advantages__ico"><img src="images/adv-3.png" alt="advantage" width="60px" height="61px"></div>
+            <div class="advantages__ico ico-today"></div>
 
             <div class="advantages__descr">
               <span class="advantages__subtitle">Индивидуальные занятия и расписание</span>
@@ -140,9 +136,7 @@
           </div>
 
           <div class="advantages__item">
-            <div class="advantages__ico">
-              <img src="images/adv-4.png" alt="advantage" width="60px" height="61px">
-            </div>
+            <div class="advantages__ico ico-ski"></div>
             <div class="advantages__descr">
               <span class="advantages__subtitle">Инвентарь и одежда</span>
               <p>Все, что необходимо для комфортного занятия - включено в стоимость, с нами не нужно беспокоиться об аренде снаряжения и покупке дорогой одежды</p>
@@ -150,9 +144,7 @@
           </div>
 
           <div class="advantages__item">
-            <div class="advantages__ico">
-              <img src="images/adv-5.png" alt="advantage" width="60px" height="61px">
-            </div>
+            <div class="advantages__ico ico-helmet"></div>
             <div class="advantages__descr">
               <span class="advantages__subtitle">Безопасность</span>
               <p>Каждый инструктор подбирает технику катания и угол склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p>
@@ -160,9 +152,7 @@
           </div>
 
           <div class="advantages__item">
-            <div class="advantages__ico">
-              <img src="images/adv-6.png" alt="advantage" width="60px" height="61px">
-            </div>
+            <div class="advantages__ico ico-bus"></div>
             <div class="advantages__descr">
               <span class="advantages__subtitle">Трансфер</span>
               <p>30 минут и вы на месте, столько примерно занимает дорога из центра города до склона на нашем бесплатном трансфере, который легко забронировать</p>
@@ -174,8 +164,6 @@
 
     <section class="discount">
       <div class="discount__container">
-      <!-- TODO: Лишняя обертка -->
-      <!-- на фоне этого блока изображение во всю ширину экрана, я не знаю как сделать без второй обертки) -->
         <h2 class="discount__title">Скидки на абонементы</h2>
           <ul class="discount__list">
             <li class="discount__item">
@@ -196,14 +184,17 @@
     </section>
 
     <section class="team">
+      <div class="team-container">
         <h2 class="team__title">Команда</h2>
         <div class="team__content">
-            <!-- TODO: Див вокруг картнки не нужен -->
-            <img src="images/team.png" alt="team">
+          <div class="team__photo">
+              <img src="images/team.png" alt="team">
+          </div>
           <p class="team__descr">Привет! Мы — команда инструкторов ICE ACE, с нами вы научитесь кататься как настоящие асы,
           потому что мы знаем, что такое выкладываться на склоне, бороться со стихией, добиваться высоких результатов и покорять самые сложные трассы. В наших рядах призеры мировых чемпионатов и они готовы поделиться своим ценным опытом, чтобы каждый урок стал вашей личной победой</p>
           <a href="#" class="btn btn--wide btn--center">Выбрать инструктора</a>
         </div>
+      </div>
     </section>
 
     <section class="community">
@@ -213,7 +204,7 @@
         <p class="community_descr">ICE ACЕ — не только школа, а целое комьюнити вдохновленных снегом и горами людей, мы без ума от сноуборда и горных лыж и часто делимся важными событиями в социальных сетях, следите за нами
         на канале Youtube и в Instagram или приходи к нам, мы всё расскажем.
         </p>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBeiaLvSLD" width="1160" height="360" frameborder="0"></iframe>
+        <div id="mymap"></div>
     </section>
 
     <section class="galery">
@@ -232,22 +223,32 @@
   <footer>
     <div class="footer__container">
       <div class="footer__links">
-        <div class="logo">
+        <div class="logo__footer">
           <a href="#"><img src="images/logo.png" alt="logo" class='logo_img'></a>
         </div>
         <ul class="social">
-          <li class="social__item"><a href="#" class="social__links-yt"></a></li>
-          <li class="social__item"><a href="#" class="social__links-in"></a></li>
-          <li class="social__item"><a href="#" class="social__links-fb"></a></li>
-          <li class="social__item"><a href="#" class="social__links-vk"></a></li>
+          <li class="social__item">
+            <a href="#" class="social__links-yt"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-in"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-fb"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-vk"></a>
+          </li>
         </ul>
         <div class="footer__contacts">
           <a href="tel:88007654749" class="phone-link">8 (800) 800-80-80</a>
           <a href="mailto:hello@ice_ace.com" class="mail-link">hello@ice_ace.com</a>
         </div>
       </div>
+      <div class="copyrigth">
+        <p>© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены</p>
+      </div>
       <div class="footer__nav">
-        <p class="copyrigth">© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены</p>
       <nav class="main-nav">
         <ul>
           <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
@@ -259,5 +260,6 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb310113fc45d7adccaa84660cc2589a5c98cc43665e610cfee6269b0d624c52&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true&amp;id=mymap"></script>
 </body>
 </html>
