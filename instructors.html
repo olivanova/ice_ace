@@ -5,51 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Инструкторы</title>
 	<link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style_temp.css">
+
 </head>
 <body>
-  <header>
-    <div class="header">  <!-- header__container?? -->
-      <div class="logo">
-        <a href="#">
-          <img src="images/logo.png" alt="logo" class='logo__img'>
-        </a>
-      </div>
 
+<header>
+  <div class="header">
+    <div class="logo">
+      <a href="#">
+        <img src="images/logo.png" alt="logo" class='logo__img'>
+      </a>
+    </div>
+    <div class="header-nav">
       <nav class="main-nav">
-        <ul>
+        <ul class="main-nav__list">
           <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
           <li><a href="instructors.html" class="main-nav__item">Инструкторы</a></li>
           <li><a href="#" class="main-nav__item">Стоимость</a></li>
           <li><a href="#" class="main-nav__item">Как добраться</a></li>
         </ul>
-      </nav>
+        <div class="logo-dMenu">
+          <a href="#">
+          <img src="images/logo-border-none.png" alt="logo">
+        </a>
+        </div>
+        <ul class="social social-header">
+          <li class="social__item">
+            <a href="#" class="social__links-yt"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-in"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-fb"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-vk"></a>
+          </li>
+        </ul>
 
         <!-- TODO: Див вокруг ссылки не нужен -->
       <div class="header__contacts">
-        <a href="tel:88007654749" class="contacl-link">8 (800) 800-80-80</a>
-
-        <a href="#" class="btn btn--float-right">Записаться</a>
+        <a href="tel:88007654749" class="phone-link">8 (800) 800-80-80</a>
+        <a href="mailto:hello@ice_ace.com" class="mail-link">hello@ice_ace.com</a>
+        <a href="#" class="btn btn--center">Записаться</a>
       </div>
+
+      </nav>
     </div>
-  </header>
+    <a href="#" class="main-nav__ico">
+        <div class="nav-burger nav-burger--invert"></div>
+    </a>
+  </div>
+</header>
 
   <main>
     <section class="instructors">
-        <h2 class="instructors__title">Инструкторы</h2>
+        <h2 class="instructors__title">Инструторы школы </h2>
         <form> <!-- формы не проходили -->
           <div class="instructors__search">
-            <input type="search" placeholder="Найти">
+            <input type="search" placeholder="Начните вводить имя">
             <!-- <input type="submit" value=""> -->
-            <button type="submit">Найти</button>
+            <button type="submit"></button>
           </div>
         </form>
         <!-- TODO: Див вокруг картинки не нужен. Див в ссылку не вкладывают -->
         <!-- поправила div на figure -->
-        <div class="instructors__list">
+        <div class="owl-carousel instructors__list" id="carousel-ins-top">
           <a href="#" class="instructor__item">
             <figure class="instructor__list-photo">
               <img src="images/inst-ars-petrov.jpg" alt="">
+              <div class="instructor__list--hover"></div>
               <figcaption class="instructor__list-name">Арсений<br>Петров</figcaption>
             </figure>
           </a>
@@ -57,12 +86,15 @@
           <a href="#" class="instructor__item">
             <figure class="instructor__list-photo">
               <img src="images/inst-noname.jpg" alt="">
+              <div class="instructor__list--hover"></div>
+              <figcaption class="instructor__list-name">Никита<br>Павлов</figcaption>
             </figure>
           </a>
 
           <a href="#" class="instructor__item">
             <figure class="instructor__list-photo">
               <img src="images/inst-step-aleksandrov.jpg" alt="">
+              <div class="instructor__list--hover"></div>
               <figcaption class="instructor__list-name">Арсений<br>Петров</figcaption>
             </figure>
           </a>
@@ -70,21 +102,24 @@
           <a href="#" class="instructor__item--active">
             <figure class="instructor__list-photo">
               <img src="images/inst-kons-konstantinopolsky.jpg" alt="">
+              <div class="instructor__list--hover"></div>
+              <figcaption class="instructor__list-name">Арсений<br>Петров</figcaption>
             </figure>
           </a>
 
           <a href="#" class="instructor__item">
             <figure class="instructor__list-photo">
               <img src="images/inst-vit-sergeev.jpg" alt="">
+              <div class="instructor__list--hover"></div>
               <figcaption class="instructor__list-name">Арсений<br>Петров</figcaption>
             </figure>
           </a>
         </div>
 
-        <div class="instructor-card">
-          <!-- TODO: Див вокруг картинки не нужен -->
-          <img src="images/inst-kons-konstantinopolsky.jpg" alt="">
-
+        <section class="instructor-card">
+          <div class="instructor-card_photo">
+           <img src="images/inst-kons-konstantinopolsky.jpg" alt="">
+          </div>
           <div class="instructor-card__descr">
             <span class="instructor-card__title"></span>
             <ul class="instructor-card__experience">
@@ -111,14 +146,10 @@
             <a href="#" class="btn">Записаться</a>
             <a href="#" class="btn--like">
               <img src="http://via.placeholder.com/16x24" alt="">
-              <!-- TODO: Зачем тут id? -->
-              <!-- эта кнопка показалась мне похожей на кнопку 'like' и при нажатии на нее число 5 должно
-              увеличиться. Поэтому я использовала id,  чтобы с помощью js обратиться к нему и при нажатии прибавлять
-              1 к нему -->
               <span id="like-count">5</span>
             </a>
           </div>
-        </div>
+
 
         <div class="instructor-skill">
           <div class="instructor-skill__descr">
@@ -130,10 +161,10 @@
             </p>
           </div>
           <div class="instructor-skill__video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xy_I81yTyu8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="300"  src="https://www.youtube.com/embed/xy_I81yTyu8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
-
+        </section>
         <div class="review">
           <article>
             <h3 class="review__subtitle">Марина</h3>
@@ -144,7 +175,8 @@
         </div>
 
 
-        <div class="instructors__list">
+        <div class="instructors__list" id="carousel-ins-bottom">
+
           <a href="#" class="instructor__item">
             <figure class="instructor__list-photo">
               <img src="images/inst-iv-petrov.jpg" alt="">
@@ -186,32 +218,46 @@
   <footer>
     <div class="footer__container">
       <div class="footer__links">
-        <div class="logo">
+        <div class="logo__footer">
           <a href="#"><img src="images/logo.png" alt="logo" class='logo_img'></a>
         </div>
-        <ul class="social">
-          <li class="social__item"><a href="#" class="social__links-yt"></a></li>
-          <li class="social__item"><a href="#" class="social__links-in"></a></li>
-          <li class="social__item"><a href="#" class="social__links-fb"></a></li>
-          <li class="social__item"><a href="#" class="social__links-vk"></a></li>
+        <ul class="social social-footer">
+          <li class="social__item">
+            <a href="#" class="social__links-yt"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-in"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-fb"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__links-vk"></a>
+          </li>
         </ul>
         <div class="footer__contacts">
           <a href="tel:88007654749" class="phone-link">8 (800) 800-80-80</a>
           <a href="mailto:hello@ice_ace.com" class="mail-link">hello@ice_ace.com</a>
         </div>
       </div>
+      <div class="copyrigth">
+        <p>© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены</p>
+      </div>
       <div class="footer__nav">
-        <p class="copyrigth">© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены</p>
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Расписание</a></li>
-          <li><a href="#">Инструкторы</a></li>
-          <li><a href="#">Стоимость</a></li>
-          <li><a href="#">Как добраться</a></li>
+          <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
+          <li><a href="instructors.html" class="main-nav__item">Инструкторы</a></li>
+          <li><a href="#" class="main-nav__item">Стоимость</a></li>
+          <li><a href="#" class="main-nav__item">Как добраться</a></li>
         </ul>
       </nav>
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/owl.carousel.min.js"></script>
+  <script src="scripts/script.js"></script>
+
 </body>
 </html>

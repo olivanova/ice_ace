@@ -8,41 +8,60 @@
   <link rel="stylesheet" href="css/style_temp.css">
 </head>
 <body>
-
-<div class="promo">
-  <div class="promo__container">
-    <h1>Школа сноубординга и горных лыж<br><span>в Санкт-Петербурге</span></h1>
+  <div class="promo">
+    <div class="promo__container">
+      <h1>Школа сноубординга и горных лыж<br><span>в Санкт-Петербурге</span></h1>
+    </div>
+    <a href="#" class="btn btn--top-mobile">Записаться</a>
   </div>
-  <a href="#" class="btn btn--top-mobile">Записаться</a>
-</div>
 
   <header>
     <div class="header">
-      <div class="logo">
+      <div class="logo logo--invert">
         <a href="#">
           <img src="images/logo.png" alt="logo" class='logo__img'>
         </a>
       </div>
+      <div class="header-nav">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
+            <li><a href="instructors.html" class="main-nav__item">Инструкторы</a></li>
+            <li><a href="#" class="main-nav__item">Стоимость</a></li>
+            <li><a href="#" class="main-nav__item">Как добраться</a></li>
+          </ul>
+          <div class="logo-dMenu">
+            <a href="#">
+            <img src="images/logo-border-none.png" alt="logo">
+          </a>
+          </div>
+          <ul class="social social-header">
+            <li class="social__item">
+              <a href="#" class="social__links-yt"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__links-in"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__links-fb"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__links-vk"></a>
+            </li>
+          </ul>
 
-      <nav class="main-nav">
-        <a href="" class="main-nav__burger">
-          <img src="images/burger.svg" alt="menu">
-        </a>
-        <ul class="main-nav__list">
-          <li><a href="schedule.html" class="main-nav__item">Расписание</a></li>
-          <li><a href="instructors.html" class="main-nav__item">Инструкторы</a></li>
-          <li><a href="#" class="main-nav__item">Стоимость</a></li>
-          <li><a href="#" class="main-nav__item">Как добраться</a></li>
-        </ul>
-      </nav>
+          <!-- TODO: Див вокруг ссылки не нужен -->
+        <div class="header__contacts">
+          <a href="tel:88007654749" class="phone-link">8 (800) 800-80-80</a>
+          <a href="mailto:hello@ice_ace.com" class="mail-link">hello@ice_ace.com</a>
+          <a href="#" class="btn btn--center">Записаться</a>
+        </div>
 
-      <a href="#" class="btn btn--header">Записаться</a>
-        <!-- TODO: Див вокруг ссылки не нужен -->
-      <div class="header__contacts">
-        <a href="tel:88007654749" class="contacl-link">8 (800) 800-80-80</a>
-
-        <a href="#" class="btn btn--float-right">Записаться</a>
+        </nav>
       </div>
+      <a href="#" class="main-nav__ico">
+          <div class="nav-burger"></div>
+      </a>
     </div>
   </header>
 
@@ -58,6 +77,11 @@
             <!-- TODO: Див вокруг картинки не нужен -->
             <div class="service__photo">
              <img src="images/service_img-1.jpg" alt="">
+             <div class="service__photo--grad"></div>
+             <div class="service__photo-links">
+                <span class="services__subtitle">Разовое посещение</span>
+                <a href="#" class='service_more'></a>
+              </div>
             </div>
 
             <div class="service__info">
@@ -67,7 +91,7 @@
                 о том, как проходит обучение. После занятия мы определим ваш уровень и прикинем план занятий</p>
               <div class="service__links">
                 <span class="services__time">3 часа</span>
-                <a href="#" class='service_more'><img src="images/right-arrow.png" alt="more"></a>
+                <a href="#" class='service_more'></a>
               </div>
             </div>
           </article>
@@ -76,13 +100,18 @@
             <!-- TODO: Див вокруг картинки не нужен -->
             <div class="service__photo--course">
               <img src="images/service_img-2.jpg" alt="">
+              <div class="service__photo--grad--course"></div>
+              <div class="service__photo-links">
+                 <span class="services__subtitle">Краткий курс</span>
+                 <a href="#" class='service_more'></a>
+               </div>
             </div>
             <div class="service__info--course">
               <span class="services__subtitle">Краткий курс</span>
               <p>Экспресс курс рассчитан на тех, кто хочет повысить свой уровень в короткий срок, узнать новые техники катания и получить лайфхаки “как кататься как чемпион” от опытных инструкторов, подходит как для новичков, так и более опытных</p>
               <div class="service__links">
                 <span class="services__time">5 занятий</span>
-                <a href="#" class='service_more'><img src="images/right-arrow.png" alt="more"></a>
+                <a href="#" class='service_more'></a>
               </div>
             </div>
           </article>
@@ -90,6 +119,11 @@
           <article class="service__article">
             <div class="service__photo--course">
               <img src="images/service_img-3.jpg" alt="">
+              <div class="service__photo--grad--course"></div>
+              <div class="service__photo-links">
+                 <span class="services__subtitle">Полный курс</span>
+                 <a href="#" class='service_more'></a>
+               </div>
             </div>
             <div class="service__info--course">
               <span class="services__subtitle">Полный курс</span>
@@ -226,7 +260,7 @@
         <div class="logo__footer">
           <a href="#"><img src="images/logo.png" alt="logo" class='logo_img'></a>
         </div>
-        <ul class="social">
+        <ul class="social social-footer">
           <li class="social__item">
             <a href="#" class="social__links-yt"></a>
           </li>
@@ -260,6 +294,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb310113fc45d7adccaa84660cc2589a5c98cc43665e610cfee6269b0d624c52&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true&amp;id=mymap"></script>
 </body>
 </html>
